@@ -17,18 +17,18 @@ import javax.xml.bind.DatatypeConverter;
  * @author lenovo
  */
 public class HashTest {
-    
-    
-    public static void main(String[] args) {
-        try {
-            MessageDigest md = MessageDigest.getInstance("MD5");
-            String password = "Lamar" + "Shinton" + "9j0g3";
-            byte[] hash = md.digest(password.getBytes());
-            String hashAsHexString = DatatypeConverter.printHexBinary(hash);
-            System.out.println(hashAsHexString);
-        } catch (NoSuchAlgorithmException ex) {
-            Logger.getLogger(HashTest.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        
-    }
+//    
+//    
+//    public static void main(String[] args) {
+//        try {
+//            MessageDigest md = MessageDigest.getInstance("MD5");
+//            String password = "Lamar" + "Shinton" + "9j0g3";
+//            byte[] hash = md.digest(password.getBytes());
+//            String hashAsHexString = DatatypeConverter.printHexBinary(hash);
+//            System.out.println(hashAsHexString);
+//        } catch (NoSuchAlgorithmException ex) {
+//            Logger.getLogger(HashTest.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+//        
+//    }
 }
